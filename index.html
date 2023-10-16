@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4e3895d11d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4e3895d11d.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+                <a class="text-sm leading-none md:px-16 px-3" href="#">
+                    <img src="/img/Group 1.png" width="70%" alt="">
+                </a>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-[#03344F] p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                    <li><a class="text-lg text-[#333333;] hover:text-[#00aeef] transition duration-500 font-semibold" href="#">Invest</a></li>
+                    <li class="text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="text-lg text-[#333333;] hover:text-[#00aeef] transition duration-500 font-semibold" href="#">Funding</a></li>
+                    <li class="text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="text-lg text-[#333333;] hover:text-[#00aeef] transition duration-500 font-semibold" href="#">Loan</a></li>
+                    <li class="text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </li>
+                    <li><a class="text-lg text-[#333333;] hover:text-[#00aeef] transition duration-500 font-semibold" href="#">Company</a></li>
+                    <li class="text-gray-300">
+                    </li>
+                </ul>
+                <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-transparent border border-[#00AEEF] text-lg text-[#00AEEF] font-semibold  rounded-xl transition duration-500" href="#">Open Account</a>
+            </nav>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                            <img src="/img/Group 1.png" width="60%" alt="">
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-[#03344F] cursor-pointer hover:text-gray-400 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-lg font-semibold text-[#333333] hover:bg-gray-200 hover:text-[#00aeef] rounded transition ease-out duration-700" href="#">Invest</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-lg font-semibold text-[#333333] hover:bg-gray-200 hover:text-[#00aeef] rounded transition ease-out duration-700" href="#">Funding</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-lg font-semibold text-[#333333] hover:bg-gray-200 hover:text-[#00aeef] rounded transition ease-out duration-700" href="#">Loan</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-lg font-semibold text-[#333333] hover:bg-gray-200 hover:text-[#00aeef] rounded transition ease-out duration-700" href="#">Company</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="pt-6">
+                            <a class="block px-4 py-3 mb-2 leading-loose text-lg text-center font-semibold bg-transparent border border-[#00AEEF] text-[#00AEEF] rounded-xl" href="#">Open Account</a>
+                        </div>
+                        <p class="my-4 text-lg text-center text-gray-400">
+                            <span>Copyright © 2023</span>
+                        </p>
+                    </div>
+                </nav>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto lg:p-10 p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="p-4 lg:mt-36" data-aos="fade-up">
+                    <h1 class="text-3xl lg:text-5xl font-bold">Achieve your financial <span class="text-[#00aeef]">goals</span> with <span class="text-[#00aeef]">ease</span></h1>
+                    <h3 class="text-xl text-[#848586] mt-5">We make it easy to access the funds you need to make your dreams a reality, With our simple and secure platform</h3><br>
+                    <a class="lg:inline-block lg:ml-auto lg:mr-3 py-1 px-10 bg-[#00aeef] border border-[#00AEEF] text-lg text-[#FFFFFF] font-medium  rounded-xl" href="/sign in.html">Get Loan</a>
+                </div>
+                <div class="lg:p-10 p-4 md:w-[600px] relative" data-aos="fade-right">
+                    <img src="/img/Ellipse 1.png" width="55%" alt="Background Image" class="w-full h-full object-cover" />
+                    <img src="/img/finacial 1.png" width="50%" alt="Overlay Image" class="absolute top-0 left-0 object-cover lg:ml-40 ml-28 -mt-7" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-down">
+        <div class="container mx-auto lg:p-10 p-4">
+            <h1 class="text-[#848586] text-2xl text-center font-semibold">Our Partners</h1>
+            <div class="w-auto mt-2">
+                <img src="/img/Frame 1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="lg:p-10 p-4" data-aos="fade-up-right">
+                    <h3 class="text-[#848586] font-medium lg:text-2xl text-3xl">About us</h3>
+                    <h1 class="text-2xl lg:text-5xl font-bold mt-3">Invest in your <span class="text-[#00AEEF]">future</span> with <span class="text-[#00AEEF]">security</span> and peace.</h1>
+                    <h2 class="text-[#848586] font-normal text-xl mt-3">We're on a mission to help people achieve their financial goals through access to loans and investment opportunities. We believe that everyone deserves the chance to build a secure financial future,</h2>
+                </div>
+                <div class="lg:p-10 p-4" data-aos="fade-down-right">
+                    <img src="/img/piggy ilustrator 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto p-4">
+            <!-- Container for demo purpose -->
+<div class="container my-24 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-center">
+      <div data-aos="fade-up-right">
+        <h2 class="pb-4 text-center text-3xl font-bold text-[#00AEEF] lg:text-5xl">Testimonials</h2>
+        <p class="text-center text-xl mb-5">Here are some customers Testimonial</p>
+      </div>
+  
+      <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12 lg:p-10" data-aos="fade-down-right">
+        <div class="mb-6 lg:mb-0">
+          <div
+            class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+            <div class="flex">
+              <div
+                class="relative mx-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat"
+                data-te-ripple-init data-te-ripple-color="light">
+                <img src="/img/Rectangle 3.png" width="50%" />
+                <a href="#!">
+                  <div
+                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 text-lg font-bold">Ekenze Umezuruke Paul</h5>
+              <h6 class="mb-4 font-medium text-primary text-[#848586]">
+                Web Developer
+              </h6>
+              <ul class="mb-6 flex justify-center">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+              </ul>
+              <p class="text-justify text-[#848586]">
+                I'm so impressed with the product that Company X offers. It has completely transformed my business, and I couldn't be happier with the results. The customer service has been excellent, and they've always been there to help me whenever I've needed it. I would highly recommend this product to anyone who's looking for a solution like this.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb-6 lg:mb-0">
+          <div
+            class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+            <div class="flex">
+              <div
+                class="relative mx-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat"
+                data-te-ripple-init data-te-ripple-color="light">
+                <img src="/img/Rectangle 3.png" width="50%" />
+                <a href="#!">
+                  <div
+                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 text-lg font-bold">Halley Frank</h5>
+              <h6 class="mb-4 font-medium text-primary text-[#848586]">
+                Marketing Specialist
+              </h6>
+              <ul class="mb-6 flex justify-center">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z" />
+                  </svg>
+                </li>
+              </ul>
+              <p class="text-justify text-[#848586]">
+                I'm so impressed with the product that Company X offers. It has completely transformed my business, and I couldn't be happier with the results. The customer service has been excellent, and they've always been there to help me whenever I've needed it. I would highly recommend this product to anyone who's looking for a solution like this.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb-0">
+          <div
+            class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+            <div class="flex">
+              <div
+                class="relative mx-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat"
+                data-te-ripple-init data-te-ripple-color="light">
+                <img src="/img/Rectangle 3.png" width="50%" />
+                <a href="#!">
+                  <div
+                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 text-lg font-bold">Lisa Trey</h5>
+              <h6 class="mb-4 font-medium text-primary text-[#848586]">
+                Digi Hub
+              </h6>
+              <ul class="mb-6 flex justify-center">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
+                    <path fill="currentColor" class="text-[#00AEEF]"
+                      d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                  </svg>
+                </li>
+              </ul>
+              <p class="text-justify text-[#848586]">
+                I'm so impressed with the product that Company X offers. It has completely transformed my business, and I couldn't be happier with the results. The customer service has been excellent, and they've always been there to help me whenever I've needed it. I would highly recommend this product to anyone who's looking for a solution like this.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto p-4 lg:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="p-4 lg:p-10" data-aos="flip-left">
+                    <h1 class="text-3xl lg:text-5xl font-bold">Get the Loan You Need - <span class="text-[#00AEEF]">Fast</span> and <span class="text-[#00AEEF]">Easy.</span></h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="lg:ml-36 -mt-9" width="200" height="99" viewBox="0 0 309 99" fill="none">
+                        <path d="M219.734 75.7067C220.811 75.1973 222.581 74.3963 224.74 73.2938C225.818 72.7408 227.02 72.1819 228.263 71.5091C229.508 70.8466 230.823 70.1433 232.184 69.4206C237.591 66.4558 243.488 62.8263 247.967 59.8006C268.743 45.8484 287.022 28.2375 301.806 8.10126C302.375 7.30926 303.043 6.37841 303.723 5.42512C304.416 4.47966 305.121 3.51844 305.749 2.65788C307.038 0.952999 308.154 -0.267392 308.57 0.0741255C309.002 0.427076 308.743 1.63176 307.888 3.47184C307.062 5.32451 305.546 7.75065 303.539 10.5632C293.664 24.0695 282.026 36.2917 269.519 47.214C264.957 51.2284 260.172 54.9852 255.256 58.5562C250.336 62.1236 245.265 65.4798 240.035 68.574C234.814 71.6791 229.471 74.5723 224.013 77.2409C218.544 79.8817 212.967 82.3051 207.306 84.5032C197.132 88.4465 186.632 91.5664 175.951 93.8323C170.613 94.9822 165.219 95.8455 159.807 96.5698C154.394 97.2705 148.947 97.71 143.498 98.0086C123.022 99.0095 102.375 97.1014 82.4555 92.1518C73.8681 89.9963 65.425 87.2634 57.1937 84.0257C48.9678 80.7651 40.9554 76.98 33.178 72.7693C32.2544 72.2862 31.2974 71.7633 30.3089 71.2175C29.3162 70.6814 28.2945 70.1327 27.2635 69.5732C26.2447 68.9912 25.2197 68.402 24.1942 67.8195C23.1759 67.2308 22.1607 66.6458 21.2027 66.0189C17.9934 64.0249 12.7608 60.5094 9.79902 58.2151C8.49395 57.2628 7.2066 56.1845 5.91496 55.2702C5.17996 54.7399 4.50441 54.2583 3.92029 53.8048C3.33679 53.3447 2.82357 52.9243 2.37646 52.5533C1.48643 51.8015 0.869822 51.2211 0.518096 50.7947C-0.185379 49.9418 0.173148 49.715 1.50006 49.9952C2.08301 50.1166 1.8315 49.4642 3.30169 50.4075C3.36534 50.4466 3.48596 50.5242 3.53992 50.5591C5.80708 51.9376 8.01413 53.4282 10.1563 55.0472C12.3521 56.5905 14.4793 58.2653 16.7607 59.7489C38.9091 74.6081 63.9692 85.0437 90.0332 90.6275C106.031 94.0139 122.446 95.6627 138.755 95.1428C143.218 94.9627 147.672 94.6108 152.189 94.261L152.114 94.2679C156.823 93.8377 161.5 93.1263 166.164 92.4004C174.983 90.951 183.897 88.8661 192.546 86.2081C201.187 83.5326 209.568 80.3348 217.411 76.8485C218.032 76.5675 218.832 76.1243 219.734 75.7067Z" fill="#848586"/>
+                      </svg>
+                      <h3 class="text-[#848586] text-xl">Whether you're looking for a loan, a grant, or something else, we're here to make the process as easy and straightforward as possible.</h3><br>
+                      <a class="lg:inline-block lg:ml-auto lg:mr-3 py-1 px-10 bg-[#00aeef] border border-[#00AEEF] text-lg text-[#FFFFFF] font-medium  rounded-xl" href="/sign in.html">Apply Now</a>
+                </div>
+                <div class="p-4 lg:-mt-20" data-aos="flip-up">
+                    <img src="/img/card atm 1.png" alt="">
+                </div>
+            </div>
+            <div class="lg:p-10">
+                <h1 class="border border-[grey] -mt-10"></h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" data-aos="zoom-in">
+                <div class="p-4 lg:p-10 hover:bg-gray-50 rounded-xl transition ease-out duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect width="80" height="80" rx="20" fill="#00AEEF" fill-opacity="0.05"/>
+                        <mask id="mask0_24_456" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="16" width="48" height="48">
+                          <rect x="16" y="16" width="48" height="48" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_24_456)">
+                          <path d="M40 58C37.8667 58 35.9583 57.45 34.275 56.35C32.5917 55.25 31.2167 53.8 30.15 52L25.4 54.7L23.4 51.25L28.55 48.25C28.45 47.8833 28.3667 47.5083 28.3 47.125C28.2333 46.7417 28.1667 46.3667 28.1 46H22V42H28.1C28.1667 41.6 28.2333 41.2083 28.3 40.825C28.3667 40.4417 28.45 40.0667 28.55 39.7L23.4 36.7L25.4 33.25L30.1 36C30.3667 35.5333 30.675 35.075 31.025 34.625C31.375 34.175 31.7333 33.7667 32.1 33.4C32.0333 33.1667 32 32.9333 32 32.7V32C32 31.2 32.1167 30.4333 32.35 29.7C32.5833 28.9667 32.9 28.2833 33.3 27.65L30 24.35L32.8 21.5L36.3 24.9C36.8667 24.6 37.4583 24.375 38.075 24.225C38.6917 24.075 39.3333 24 40 24C40.6667 24 41.3167 24.0833 41.95 24.25C42.5833 24.4167 43.1833 24.65 43.75 24.95L47.2 21.5L50 24.35L46.7 27.65C47.1 28.2833 47.4083 28.9667 47.625 29.7C47.8417 30.4333 47.95 31.2 47.95 32V32.675C47.95 32.8917 47.9167 33.1167 47.85 33.35C48.2167 33.7167 48.575 34.1333 48.925 34.6C49.275 35.0667 49.5833 35.5333 49.85 36L54.6 33.3L56.6 36.75L51.4 39.7C51.5 40.0667 51.5917 40.4417 51.675 40.825C51.7583 41.2083 51.8333 41.6 51.9 42H58V46H51.9C51.8333 46.4 51.7667 46.7917 51.7 47.175C51.6333 47.5583 51.55 47.9333 51.45 48.3L56.6 51.3L54.6 54.75L49.85 52C48.7833 53.8 47.4083 55.25 45.725 56.35C44.0417 57.45 42.1333 58 40 58ZM36.2 30.7C36.7667 30.4667 37.375 30.2917 38.025 30.175C38.675 30.0583 39.3333 30 40 30C40.6667 30 41.3083 30.05 41.925 30.15C42.5417 30.25 43.1333 30.4167 43.7 30.65C43.4333 29.8833 42.9667 29.25 42.3 28.75C41.6333 28.25 40.8667 28 40 28C39.1333 28 38.35 28.2583 37.65 28.775C36.95 29.2917 36.4667 29.9333 36.2 30.7ZM40 54C42.4333 54 44.375 52.9833 45.825 50.95C47.275 48.9167 48 46.6 48 44C48 41.6667 47.325 39.4167 45.975 37.25C44.625 35.0833 42.6333 34 40 34C37.4 34 35.4167 35.075 34.05 37.225C32.6833 39.375 32 41.6333 32 44C32 46.6 32.725 48.9167 34.175 50.95C35.625 52.9833 37.5667 54 40 54ZM38 50V38H42V50H38Z" fill="#222424"/>
+                        </g>
+                      </svg>
+                      <h1 class="text-2xl lg:text-3xl font-bold mt-5">Safe and secure funding</h1>
+                      <h4 class="text-[#848586] mt-4 text-xl">We take your privacy and security seriously. We use the latest security measures to protect your information, and we never share your data with third parties.</h4>
+                </div>
+                <div class="p-4 lg:p-10 hover:bg-gray-50 rounded-xl transition ease-out duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect width="80" height="80" rx="20" fill="#00AEEF" fill-opacity="0.05"/>
+                        <mask id="mask0_24_495" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="16" width="48" height="48">
+                          <rect x="16" y="16" width="48" height="48" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_24_495)">
+                          <path d="M37 46H43L41.85 39.55C42.5167 39.2167 43.0417 38.7333 43.425 38.1C43.8083 37.4667 44 36.7667 44 36C44 34.9 43.6083 33.9583 42.825 33.175C42.0417 32.3917 41.1 32 40 32C38.9 32 37.9583 32.3917 37.175 33.175C36.3917 33.9583 36 34.9 36 36C36 36.7667 36.1917 37.4667 36.575 38.1C36.9583 38.7333 37.4833 39.2167 38.15 39.55L37 46ZM40 60C35.3667 58.8333 31.5417 56.175 28.525 52.025C25.5083 47.875 24 43.2667 24 38.2V26L40 20L56 26V38.2C56 43.2667 54.4917 47.875 51.475 52.025C48.4583 56.175 44.6333 58.8333 40 60ZM40 55.8C43.4667 54.7 46.3333 52.5 48.6 49.2C50.8667 45.9 52 42.2333 52 38.2V28.75L40 24.25L28 28.75V38.2C28 42.2333 29.1333 45.9 31.4 49.2C33.6667 52.5 36.5333 54.7 40 55.8Z" fill="#222424"/>
+                        </g>
+                      </svg>
+                    <h1 class="text-2xl lg:text-3xl font-bold mt-5">No collateral required</h1>
+                    <h4 class="text-[#848586] mt-4 text-xl">you don't need to put up any assets or property as collateral to get funding through our platform.</h4>
+                </div>
+                <div class="p-4 lg:p-10 hover:bg-gray-50 rounded-xl transition ease-out duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect width="80" height="80" rx="20" fill="#00AEEF" fill-opacity="0.05"/>
+                        <mask id="mask0_24_487" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="16" width="48" height="48">
+                          <rect x="16" y="16" width="48" height="48" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_24_487)">
+                          <path d="M28 56C26.9 56 25.9583 55.6083 25.175 54.825C24.3917 54.0417 24 53.1 24 52C24 50.9 24.3917 49.9583 25.175 49.175C25.9583 48.3917 26.9 48 28 48C29.1 48 30.0417 48.3917 30.825 49.175C31.6083 49.9583 32 50.9 32 52C32 53.1 31.6083 54.0417 30.825 54.825C30.0417 55.6083 29.1 56 28 56ZM40 56C38.9 56 37.9583 55.6083 37.175 54.825C36.3917 54.0417 36 53.1 36 52C36 50.9 36.3917 49.9583 37.175 49.175C37.9583 48.3917 38.9 48 40 48C41.1 48 42.0417 48.3917 42.825 49.175C43.6083 49.9583 44 50.9 44 52C44 53.1 43.6083 54.0417 42.825 54.825C42.0417 55.6083 41.1 56 40 56ZM52 56C50.9 56 49.9583 55.6083 49.175 54.825C48.3917 54.0417 48 53.1 48 52C48 50.9 48.3917 49.9583 49.175 49.175C49.9583 48.3917 50.9 48 52 48C53.1 48 54.0417 48.3917 54.825 49.175C55.6083 49.9583 56 50.9 56 52C56 53.1 55.6083 54.0417 54.825 54.825C54.0417 55.6083 53.1 56 52 56ZM28 44C26.9 44 25.9583 43.6083 25.175 42.825C24.3917 42.0417 24 41.1 24 40C24 38.9 24.3917 37.9583 25.175 37.175C25.9583 36.3917 26.9 36 28 36C29.1 36 30.0417 36.3917 30.825 37.175C31.6083 37.9583 32 38.9 32 40C32 41.1 31.6083 42.0417 30.825 42.825C30.0417 43.6083 29.1 44 28 44ZM40 44C38.9 44 37.9583 43.6083 37.175 42.825C36.3917 42.0417 36 41.1 36 40C36 38.9 36.3917 37.9583 37.175 37.175C37.9583 36.3917 38.9 36 40 36C41.1 36 42.0417 36.3917 42.825 37.175C43.6083 37.9583 44 38.9 44 40C44 41.1 43.6083 42.0417 42.825 42.825C42.0417 43.6083 41.1 44 40 44ZM52 44C50.9 44 49.9583 43.6083 49.175 42.825C48.3917 42.0417 48 41.1 48 40C48 38.9 48.3917 37.9583 49.175 37.175C49.9583 36.3917 50.9 36 52 36C53.1 36 54.0417 36.3917 54.825 37.175C55.6083 37.9583 56 38.9 56 40C56 41.1 55.6083 42.0417 54.825 42.825C54.0417 43.6083 53.1 44 52 44ZM28 32C26.9 32 25.9583 31.6083 25.175 30.825C24.3917 30.0417 24 29.1 24 28C24 26.9 24.3917 25.9583 25.175 25.175C25.9583 24.3917 26.9 24 28 24C29.1 24 30.0417 24.3917 30.825 25.175C31.6083 25.9583 32 26.9 32 28C32 29.1 31.6083 30.0417 30.825 30.825C30.0417 31.6083 29.1 32 28 32ZM40 32C38.9 32 37.9583 31.6083 37.175 30.825C36.3917 30.0417 36 29.1 36 28C36 26.9 36.3917 25.9583 37.175 25.175C37.9583 24.3917 38.9 24 40 24C41.1 24 42.0417 24.3917 42.825 25.175C43.6083 25.9583 44 26.9 44 28C44 29.1 43.6083 30.0417 42.825 30.825C42.0417 31.6083 41.1 32 40 32ZM52 32C50.9 32 49.9583 31.6083 49.175 30.825C48.3917 30.0417 48 29.1 48 28C48 26.9 48.3917 25.9583 49.175 25.175C49.9583 24.3917 50.9 24 52 24C53.1 24 54.0417 24.3917 54.825 25.175C55.6083 25.9583 56 26.9 56 28C56 29.1 55.6083 30.0417 54.825 30.825C54.0417 31.6083 53.1 32 52 32Z" fill="#222424"/>
+                        </g>
+                      </svg>
+                    <h1 class="text-2xl lg:text-3xl font-bold mt-5">Simple application process</h1>
+                    <h4 class="text-[#848586] mt-4 text-xl">Our application process is simple and straightforward. You can complete it in just a few minutes, and you'll get a decision quickly</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container mx-auto p-4">
+            <div class="p-4 lg:p-10 flex">
+                <div  data-aos="zoom-in-down">
+                    <h1 class="text-3xl lg:text-5xl font-bold">Your one-stop shop for <span class="text-[#00AEEF]">funding</span class="text-[#00AEEF]"> your <span>accounts</span></h1>
+                    <h5 class="text-[#848586] text-xl mt-5 lg:mt-10">Welcome to our secure and easy-to-use funding page. We're here to help you fund your accounts quickly and easily, so you can get on with your day</h5>
+                </div>
+                <div class="hidden md:block"  data-aos="zoom-in-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="124" viewBox="0 0 256 124" fill="none">
+                        <path d="M116.216 71.2784C117.702 72.152 120.184 73.4389 123.36 74.729C126.536 76.0191 130.418 77.2573 134.617 78.2001C138.808 79.1449 143.323 79.7826 147.698 80.1809C152.073 80.6108 156.301 80.6667 159.983 80.5796C177.019 80.104 193.685 75.3577 207.867 65.522C221.981 55.713 233.602 40.7433 240.278 22.3465C241.358 19.4923 242.498 15.4612 243.494 12.2183C243.767 11.4203 243.987 10.6452 244.213 9.96303C244.439 9.28088 244.669 8.68181 244.898 8.18747C245.353 7.22047 245.818 6.71211 246.258 6.93261C247.177 7.39596 247.577 9.57432 247.428 13.1194C247.148 16.601 246.306 21.4729 244.29 26.7488C239.536 39.6093 232.389 50.7317 223.828 59.6754C215.267 68.6605 205.221 75.3788 194.545 79.994C178.888 86.7743 161.656 88.5749 144.537 86.5768C135.983 85.5976 127.285 83.6675 118.814 79.7351C114.593 77.7602 110.455 75.2314 106.554 72.1016C102.685 68.9644 99.0271 65.0855 95.9844 60.5999C93.2435 56.5875 90.9983 52.091 89.316 47.3249C87.6416 42.5569 86.5543 37.4821 86.3145 32.3637C86.0512 27.2507 86.8049 22.1483 88.4378 17.6231C90.066 13.0781 92.7696 9.24201 96.0246 6.48003C97.6647 5.11702 99.4283 3.99707 101.272 3.10966C103.118 2.23217 105.043 1.61881 106.992 1.17776C110.91 0.343409 114.966 0.335366 118.978 1.00844C127 2.3862 135.026 6.42409 141.655 13.234C143.205 14.8676 144.629 16.5624 145.989 18.3669C147.333 20.175 148.6 22.0747 149.782 24.068C150.94 26.0669 152.011 28.1493 152.977 30.309C153.921 32.4843 154.742 34.7307 155.437 37.0383C156.787 41.6528 157.551 46.5841 157.45 51.3749C157.4 56.1745 156.571 60.8233 155.204 65.0444C152.441 73.5357 147.761 80.3439 142.6 86.0931C139.997 88.9624 137.25 91.6041 134.379 93.971L130.046 97.4391L127.872 99.1591L125.609 100.712C104.891 115.302 80.7179 122.551 56.0552 123.105C50.2549 123.307 43.2204 123.382 36.7804 122.624C35.447 122.532 33.901 122.238 32.2355 121.962C30.5754 121.675 28.7966 121.373 27.0256 121.07C23.4875 120.306 19.9663 119.37 17.3483 118.66C15.1021 117.883 12.7792 117.061 10.562 116.476C9.92685 116.302 9.31746 116.132 8.74401 115.974C8.17132 115.785 7.62751 115.579 7.11419 115.397C6.08284 115.013 5.17259 114.652 4.37561 114.317C2.78165 113.648 1.63611 113.06 0.928824 112.547C-0.477948 111.518 -0.134065 110.777 1.75182 110.173C2.5788 109.903 1.87347 108.876 4.30699 109.399C4.41011 109.417 4.61088 109.464 4.69838 109.485C12.0683 110.86 19.3705 113.445 26.8999 115.076C63.7779 122.071 101.274 112.88 130.299 88.7257C132.577 86.9599 134.672 84.9758 136.73 82.906C138.783 80.8481 140.728 78.648 142.503 76.2892C144.296 73.9365 145.95 71.4493 147.342 68.7621C148.727 66.0768 149.956 63.2606 150.769 60.2499C151.591 57.2473 152.078 54.1148 152.191 50.9032L152.171 48.4878C152.17 47.6815 152.07 46.8775 152.019 46.0723C151.827 44.4625 151.6 42.8403 151.213 41.2452C150.503 38.0401 149.396 34.8978 147.999 31.9288C146.616 28.9461 144.947 26.115 143.062 23.5235C142.046 22.0882 140.921 20.7519 139.792 19.469C138.646 18.253 137.473 17.0642 136.214 16.0321C133.713 13.901 131.014 12.1522 128.197 10.6722L128.291 10.7231C125.326 9.27832 122.243 8.31187 119.162 7.8059C116.082 7.26832 113.004 7.26438 110.041 7.67334C107.243 8.08497 104.542 9.00799 102.109 10.4334C99.7023 11.9046 97.5253 13.8559 95.8987 16.3891C95.0436 17.6184 94.3807 19.0327 93.7742 20.4755C93.2106 21.9605 92.7744 23.5306 92.4483 25.1479C91.8166 28.3986 91.7302 31.8973 92.1352 35.4156C92.9241 42.4678 95.6555 49.4681 99.3382 55.3316C101.191 58.2763 103.294 60.9208 105.599 63.2345C107.935 65.5723 110.428 67.6321 113.028 69.3833C113.428 69.6763 113.937 69.9434 114.48 70.2545C114.992 70.6046 115.585 70.9461 116.216 71.2784Z" fill="#222424"/>
+                        <path d="M252.601 12.919C252.863 13.5695 253.658 15.9163 254.116 17.4315C255.223 20.9196 255.9 24.6459 255.553 28.2273C255.496 28.7857 255.532 29.7408 253.683 29.5609C251.759 29.3779 250.622 28.7569 250.647 27.9549C250.678 25.9989 250.824 23.9004 250.057 21.9869C248.961 19.2401 248.275 16.4168 246.98 13.8427C246.771 13.4105 246.545 12.982 246.323 12.5634L246.184 12.2923L246.144 12.2284L246.075 12.1087C245.988 11.9512 245.868 11.7596 245.705 11.7669C245.601 11.781 245.526 11.8826 245.477 11.9885C245.455 12.0356 245.438 12.1025 245.426 12.1577L245.414 12.2444C245.411 12.2661 245.419 12.2642 245.408 12.2878L244.411 14.0327C243.824 15.0727 243.225 16.0947 242.538 17.0224C241.358 18.622 239.818 19.8147 238.514 21.276C238.208 21.6209 238.141 22.3806 237.821 22.7708C237.552 23.0965 237.124 23.6588 236.752 23.8623C236.592 23.9526 236.411 24.0268 236.36 24.2275C236.12 25.1644 235.478 24.751 234.005 22.6799C233.682 22.2222 233.166 21.7474 233.037 21.3066C233.032 21.2868 233.015 21.249 233.01 21.2291C232.373 19.6201 233.195 19.6452 233.532 19.115C235.201 16.5193 236.974 14.0457 238.709 11.5182L240.335 9.22613C240.606 8.8372 240.869 8.4501 241.119 8.04504L241.623 7.24484C241.857 6.87508 242.088 6.49538 242.343 6.14176C242.876 5.36574 243.469 4.49186 244.275 4.44748L244.26 4.45119C244.655 4.27374 245.082 4.162 245.53 4.13955C245.958 4.13258 246.401 4.19506 246.818 4.38951C247.62 4.74427 248.359 5.35491 249.025 6.1818C249.365 6.57264 249.653 7.09108 249.944 7.58784C250.225 8.07653 250.551 8.61739 250.796 9.06204C251.415 10.2459 251.964 11.4148 252.373 12.617C252.418 12.7007 252.545 12.7857 252.601 12.919Z" fill="#222424"/>
+                      </svg>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="p-4 lg:p-10" data-aos="zoom-in-right">
+                    <img src="/img/Group 46 1.png" alt="">
+                </div>
+                <div class="p-4 lg:p-10" data-aos="zoom-out-right">
+                    <h1 class="text-3xl lg:text-5xl font-semibold">One-stop shop for all your payment needs</h1>
+                    <p class="text-xl text-[#848586] mt-5">We offer a comprehensive suite of payment products that work together seamlessly, so you can focus on your business without worrying about the details."</p>
+                    <p class="text-xl text-[#848586] mt-5">We offer a wide range of features and options to meet your specific needs, all in one convenient place. Let us take care of the details so you can focus on what you do best</p><br>
+                    <a class="lg:inline-block lg:ml-auto lg:mr-3 py-1 px-10 bg-[#00aeef] border border-[#00AEEF] text-lg text-[#FFFFFF] font-medium  rounded-xl" href="/sign in.html">Fund Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#F8F9FA]">
+        <div class="container mx-auto p-4 flex">
+            <div class="p-4 lg:p-10" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1 class="text-3xl lg:text-5xl font-semibold">200M + Users</h1>
+                <p class="text-[#848586] text-xl mt-3">Our app has been downloaded over 200 million times, and we're just getting started. We're constantly adding new features and improving the user experience, so you can be sure you're getting the best possible service.</p>
+              <div class="flex mt-5">
+                <a href="#"><img src="/img/App Store.png" width="60%" alt=""></a>
+                <a href="#" class="-ml-14"><img src="/img/Google Play.png" width="60%" alt=""></a>
+              </div>
+            </div>
+            <div data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block mt-28" width="556" height="67" viewBox="0 0 556 67" fill="none">
+                    <path d="M554.823 55.4248C554.371 54.7437 553.813 54.2031 553.188 53.8409C552.937 53.6895 552.68 53.5573 552.418 53.4449L551.873 53.239L551.423 53.1123C550.854 52.9539 550.404 52.8747 549.942 52.7955C549.041 52.6371 548.212 52.542 547.382 52.4628C545.735 52.3203 544.136 52.2253 542.548 52.1619C539.373 52.0352 536.233 51.9877 533.069 51.956C524.775 51.956 516.6 51.956 508.401 52.0352L508.827 51.7818C509.085 51.6046 509.331 51.3979 509.562 51.1641C510.053 50.7119 510.468 50.1275 510.78 49.4483C511.092 48.769 511.295 48.01 511.375 47.22C511.538 45.9948 511.403 44.7318 510.989 43.617C510.575 42.5021 509.904 41.5942 509.076 41.0268C508.746 40.7733 508.391 40.5814 508.021 40.4566C507.859 40.387 507.692 40.3341 507.524 40.2982C507.216 40.219 507.097 40.2032 506.884 40.1715L506.043 40.0765C505.059 39.9973 504.242 39.9973 503.412 39.9973H501.374C501.609 39.8663 501.839 39.7182 502.061 39.5538L502.476 39.237C502.676 39.0707 502.87 38.891 503.057 38.6985C503.452 38.2891 503.799 37.8033 504.088 37.2571C504.905 36.5443 505.272 32.8538 504.277 30.6204C512.5 30.5095 520.711 30.3987 528.91 30.2086C532.986 30.2086 537.015 30.0977 541.209 29.9235L542.844 29.8126C543.141 29.8126 543.425 29.8126 543.78 29.7017L544.361 29.5909L544.799 29.4641C545.093 29.3725 545.379 29.2398 545.653 29.0682C545.309 29.6542 548.2 27.405 547.75 23.6669C546.375 19.4537 546.281 21.0693 545.818 20.1981C545.451 19.9447 545.451 19.9606 545.238 19.8338L544.871 19.6596C544.432 19.4695 544.16 19.3903 543.852 19.2795C543.259 19.0894 542.738 18.9468 542.205 18.8042C541.671 18.6617 541.02 18.5508 540.38 18.4241L538.804 18.2816C537.726 18.1707 536.683 18.1073 535.641 18.0281C532.88 17.8856 530.143 17.8064 527.346 17.743L531.742 17.6321L541.695 17.5055C542.56 17.5055 543.413 17.5054 544.326 17.3787C544.776 17.3787 545.226 17.2995 545.747 17.2203C546.36 17.1411 546.966 16.9927 547.56 16.7768C547.729 16.7173 547.896 16.6432 548.058 16.5551C548.358 16.4128 548.648 16.2325 548.923 16.0166C548.662 17.4738 552.477 11.9617 549.515 8.3028C549.049 7.75917 548.493 7.3734 547.892 7.17817C547.546 7.05421 547.193 6.96424 546.837 6.90893L546.067 6.78219C545.119 6.67131 544.254 6.62379 543.389 6.57627C539.965 6.43371 536.648 6.4179 533.318 6.40206H513.484H508.377C510.664 5.8952 510.201 5.35666 514.526 4.81812C552.75 0.652376 522.571 -0.583115 408.363 0.24053C383.48 0.414763 357.153 0.24053 331.761 0.24053L223.394 0.145498H165.336H138.605C130.098 0.145498 122.076 0.145523 114.612 0.319756L87.2888 0.905804L83.829 0.984981C83.2128 0.984981 82.6441 1.06419 81.8503 1.1909L81.4474 1.27013L81.0801 1.38096L80.7009 1.52356C80.227 1.91955 80.5469 1.23843 79.0421 2.98075C77.5374 4.72308 78.0587 7.73258 78.8644 9.49075H74.1249H61.0915C56.7904 9.49075 52.4775 9.49075 48.1409 9.49075C43.8043 9.49075 39.4559 9.33233 35.0008 9.41152C33.8871 9.41152 32.7614 9.41155 31.6003 9.53827C30.3344 9.5954 29.0722 9.75406 27.8205 10.0134L27.24 10.156L26.5409 10.3777C26.2329 10.5203 25.9603 10.6312 25.5812 10.8529C25.202 11.0747 25.0835 11.1697 24.8466 11.3598C24.443 11.7039 24.0728 12.1136 23.7446 12.5794C23.2275 13.2809 22.8485 14.143 22.6417 15.0884C22.4349 16.0338 22.4068 17.033 22.5598 17.9965C22.6881 18.904 22.9678 19.7612 23.3781 20.5043C23.7883 21.2475 24.3186 21.8575 24.9295 22.2889C25.2422 22.5026 25.567 22.6827 25.9011 22.8274L26.4698 23.0175C27.0741 23.1917 27.5243 23.4452 27.8798 23.4927C29.2661 23.6511 29.74 23.6828 30.8775 23.7303H16.6592C13.9577 23.7303 11.268 23.7303 8.50732 23.8729L6.3864 23.9837C5.65179 24.0629 4.96457 24.1104 4.01668 24.3005L3.62567 24.3955C3.46199 24.4316 3.29985 24.4793 3.13989 24.5381C2.87743 24.6302 2.62008 24.7467 2.36972 24.8866C2.10905 25.3301 1.03083 24.8866 0 28.8622C0.118486 33.614 1.61141 33.614 1.77729 34.0734C2.01414 34.2811 2.26388 34.4613 2.52376 34.6119C2.677 34.7115 2.83538 34.7962 2.9977 34.8654L3.37686 35.0396C4.15498 35.3547 4.94625 35.6086 5.74659 35.7999C7.81142 36.3237 9.90255 36.6414 12.0027 36.7502C11.69 37.3774 11.4354 38.0528 11.2443 38.7618C11.0742 39.8959 11.1929 41.0735 11.5816 42.1069C11.9703 43.1404 12.6065 43.9701 13.3889 44.464C13.696 44.6573 14.0178 44.806 14.3487 44.9075C14.8815 45.0494 15.4193 45.1552 15.9601 45.2243H16.4103C17.9151 45.3827 19.2895 45.4144 20.6758 45.4619H25.202H34.1596L69.9424 45.8895L117.645 46.4914L85.0849 46.7449L67.1698 46.8716C61.1744 46.9824 55.3212 46.8716 49.3969 46.6023C43.4726 46.333 37.4653 46.0796 31.2448 46.3805C29.5843 46.4466 27.9293 46.6689 26.2921 47.0458L25.6049 47.22C25.356 47.2992 25.0598 47.4418 24.7873 47.5527L23.9697 47.9328C23.7446 48.0754 23.5077 48.2179 23.247 48.408C22.8571 48.6732 22.4914 48.9974 22.1569 49.3742C21.583 49.9976 21.1688 50.8447 20.972 51.7976C20.7766 52.7547 20.8034 53.7687 21.0489 54.705C21.2944 55.6413 21.7469 56.4558 22.3465 57.0404C22.7047 57.3892 23.1057 57.6518 23.5314 57.8165C23.7361 57.9121 23.946 57.9862 24.1593 58.0383C24.4447 58.1237 24.7335 58.1872 25.0243 58.2284C26.6559 58.4027 28.2936 58.4556 29.9296 58.3868L34.4676 58.2284C40.463 57.9433 46.3873 57.6106 52.2406 57.6265L70.132 57.7849L105.974 58.1017H111.424L111.294 58.2759C110.827 59.0941 110.559 60.0833 110.524 61.1112C110.489 61.8643 110.599 62.6168 110.844 63.297C111.023 63.8282 111.267 64.3154 111.567 64.7383L111.875 65.1185C112.231 65.5056 112.631 65.8156 113.06 66.0372C113.228 66.1451 113.402 66.2351 113.581 66.3065L113.865 66.4015L114.434 66.5757L114.861 66.6549C115.441 66.7816 115.868 66.7975 116.342 66.845C117.242 66.845 118.083 66.845 118.901 66.845C122.183 66.845 125.264 66.7183 128.309 66.6866L163.227 66.9559C185.17 67.0667 204.27 66.9558 220.041 66.7658C237.458 66.4965 250.847 66.0055 259.485 65.3244H272.269L421.692 64.8809C446.491 65.1819 471.457 63.9622 496.457 64.8809C508.934 65.3086 521.339 65.166 533.911 64.8809C537.062 64.8017 540.226 64.675 543.461 64.3899C545.084 64.2473 546.707 64.0573 548.437 63.7246C549.388 63.5476 550.329 63.2936 551.257 62.9643C552.115 62.808 552.957 62.5265 553.769 62.1249C554.039 61.9324 554.297 61.7099 554.539 61.4596C554.91 61.1199 555.238 60.7028 555.511 60.2242C555.709 59.907 555.84 59.5239 555.89 59.1154C556.198 59.2421 555.866 56.5336 554.823 55.4248ZM505.344 42.1831C505.296 42.0406 505.296 42.0406 505.344 42.1831V42.1831ZM114.659 60.7468L114.766 60.5093L114.671 60.731L114.659 60.7468Z" fill="#00AEEF" fill-opacity="0.61"/>
+                  </svg>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="flip-right"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="3000">
+        <h1 class="text-center mt-10 text-2xl lg:text-4xl font-semibold">Join our News Letter</h1>
+        <div style="margin-left: 36%;">
+            <div class="mt-6 flex max-w-md gap-x-4 lg:p-10 p-4 bg-[#F8F9FA] -ml-40 lg:ml-1 py-10">
+                <label for="email-address" class="sr-only">Email address</label>
+                <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+                <button type="submit" class="flex-none rounded-md bg-[#00AEEF] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#00AEEF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Subscribe</button>
+              </div>
+        </div>
+    </div><br><br>
+
+    <div class="bg-[#00AEEF]">
+        <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="p-4">
+                    <img src="/img/Frame 10 (1) 1.png" width="25%" alt="">
+                    <h1 class="text-white lg:mt-2 mt-2 text-xl ">Follow Us</h1>
+                    <div class="mt-2" style="word-spacing: 10px;">
+                        <i class="fa-brands fa-square-facebook fa-xl" style="color: #f3f4f7;"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl" style="color: #f7f7f8;"></i>
+                        <i class="fa-brands fa-square-x-twitter fa-xl" style="color: #f5f7fa;"></i>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h1 class="text-white text-xl font-semibold">Company</h1>
+                    <div class="text-white mt-2">
+                        <h1 class="mt-2"><a href="#">About</a></h1>
+                        <h1 class="mt-2"><a href="#">Features</a></h1>
+                        <h1 class="mt-2"><a href="#">FAQs</a></h1>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h1 class="text-white text-xl font-semibold">Resources</h1>
+                    <div class="text-white">
+                        <h1 class="mt-2"><a href="#">Support</a></h1>
+                        <h1 class="mt-2"><a href="#">Policy</a></h1>
+                        <h1 class="mt-2"><a href="#">Team</a></h1>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h1 class="text-white text-xl font-semibold">Contact</h1>
+                    <div class="text-white">
+                        <h1 class="mt-2"><a href="#">+2348165992846</a></h1>
+                        <h1 class="mt-2"><a href="#">Kingrudy@gmail.com</a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-center text-white text-lg font-medium">Copyright 2023, All Right Reserved</h1>
+        </div>
+    </div>
+          
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+        AOS.init({
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 3000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', 
+        });
+    </script>
+</body>
+</html>
